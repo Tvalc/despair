@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SNIB Space Shooter</title>
+    <style>
+        body {
+            background: #0a0d1a;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #game-canvas {
+            background: linear-gradient(180deg, #101423 0%, #222842 100%);
+            border: 3px solid #5aa0fa;
+            border-radius: 16px;
+            box-shadow: 0 0 40px #183764, 0 0 0 8px #0f2447 inset;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="480" height="640"></canvas>
+    </div>
+    <script src="entities.js"></script>
+    <script src="game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
